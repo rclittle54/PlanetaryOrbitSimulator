@@ -246,7 +246,7 @@ class Game:
         
         SUN_FIXED = 1
         
-        self.B1 = Body(self,500,20,
+        self.B1 = Body(self,1000,20,
                        500,500,
                        0,0,
                        fixed=SUN_FIXED,name='Sun',color=(255,255,0))
@@ -272,6 +272,9 @@ class Game:
             vx, vy = vel[0],vel[1]
             body.vx = vx
             body.vy = vy
+            
+            
+        self.ModZoom(-0.5)
         
         
     def ModSpeed(self,d):
